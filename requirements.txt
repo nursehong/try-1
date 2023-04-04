@@ -1,4 +1,6 @@
 numpy
+Image
+gunicorn
 opencv-python-headless
 Pillow==9.5.0
 PyYAML==6.0
