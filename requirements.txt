@@ -1,7 +1,7 @@
 Image
 numpy
 opencv-python-headless
-Pillow
-PyYAML
-streamli
+Pillow==9.5.0
+PyYAML==6.0
+streamli==1.19.0
 gunicorn
