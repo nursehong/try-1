@@ -19,7 +19,7 @@ NAME = "ChunHong Xiao"
 DESCRIPTION = """
 Ph.D.  Geriatric Nursing Rearcher.My research is focused on the interaction of behavioral symptoms of dementia and the social, care, and physical environment. 
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "dehong@uab.edu"
 SOCIAL_MEDIA = {
     "ResearchGate": "https://www.researchgate.net/profile/Chunhong-Xiao",
     "LinkedIn": "https://www.linkedin.com/in/chunhong-xiao-5a8299b3/",
