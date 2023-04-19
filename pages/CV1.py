@@ -356,10 +356,7 @@ def paper_summary(index):
     with st.expander('>'+'Abstract:'):
         with st.spinner(text="Loading details..."):
                 st.write('>'+paper_info['Summary'][index])
-                pdfFileObj = open('{}'.format(paper_info['file'][index]), 'rb')
-              
-                
-                st.download_button('download paper',pdfFileObj,file_name=paper_info['file'][index],mime='pdf')
+
     
 
 
