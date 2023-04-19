@@ -352,10 +352,10 @@ def paper_summary(index):
     st.markdown('📃<em><strong>'+paper_info['name'][index]+'</strong></em>',unsafe_allow_html=True)
     st.caption(paper_info['role'][index])
     st.caption(paper_info['journal'][index]+' , '+paper_info['publication'][index]+' , '+paper_info['year'][index])
-    with st.expander('>'+'Abstract:'):
+    with st.expander('Abstract:'):
         with st.spinner(text="Loading details..."):
                 st.write('>'+paper_info['Summary'][index])
-        with open('assets/{}'.format(paper_info['file'][index]), 'rb') as pdf_file:
+        with open('pdfs/{}'.format(paper_info['file'][index]), 'rb') as pdf_file:
                PDFbyte = pdf_file.read()
         st.download_button(
            label=" 📄 Download",
