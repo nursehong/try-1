@@ -362,7 +362,7 @@ def paper_summary(index):
 
 
 paper_summary(0)
-file1 = current_dir/ "assets"  / "1.pdf"
+file1 =  current_dir / "assets" / "CV.pdf"
 with open(file1, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
