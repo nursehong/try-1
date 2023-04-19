@@ -348,28 +348,22 @@ txt('- Conference Abstract Reviewers ','2021-2022 ')
 
 st.subheader('Research Papers 📝')
 
-
 def paper_summary(index):
     st.markdown('📃<em><strong>'+paper_info['name'][index]+'</strong></em>',unsafe_allow_html=True)
     st.caption(paper_info['role'][index])
     st.caption(paper_info['journal'][index]+' , '+paper_info['publication'][index]+' , '+paper_info['year'][index])
-    with st.expander('Abstract:'):
+    with st.expander('>'+'Abstract:'):
         with st.spinner(text="Loading details..."):
                 st.write('>'+paper_info['Summary'][index])
-
-    
-
-
-paper_summary(0)
-file1 =  current_dir / "assets" / "1.pdf"
-with open(file1, "rb") as pdf_file1:
-    PDFbyte = pdf_file1.read()
-st.download_button(
-        label=" 📄 Download ",
+        with open('pdfs/{}'.format(paper_info['file'][index]), 'rb') as pdf_file:
+               PDFbyte = pdf_file.read()
+        st.download_button(
+           label=" 📄 Download",
         data=PDFbyte,
-        file_name=file1.name,
+        file_name=paper_info['file'][index],
         mime="application/octet-stream",
     )
+paper_summary(0)
 paper_summary(1)
 paper_summary(2)
 paper_summary(3)
