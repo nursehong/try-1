@@ -361,7 +361,7 @@ def paper_summary(index):
 
 
 paper_summary(0)
-file1 =  current_dir / "assets" / "CV.pdf"
+file1 =  current_dir / "assets" / "1.pdf"
 with open(file1, "rb") as pdf_file1:
     PDFbyte = pdf_file1.read()
 st.download_button(
