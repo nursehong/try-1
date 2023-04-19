@@ -364,9 +364,7 @@ def paper_summary(index):
         mime="application/octet-stream",
     )
 paper_summary(0)
-paper_summary(1)
-paper_summary(2)
-paper_summary(3)
+
 
 st_player("https://www.facebook.com/watch/?v=199533675658464")
 
