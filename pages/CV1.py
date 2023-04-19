@@ -362,10 +362,10 @@ def paper_summary(index):
 
 paper_summary(0)
 file1 =  current_dir / "assets" / "CV.pdf"
-with open(file1, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open(file1, "rb") as pdf_file1:
+    PDFbyte = pdf_file1.read()
 st.download_button(
-        label=" 📄 Download Resume",
+        label=" 📄 Download ",
         data=PDFbyte,
         file_name=file1.name,
         mime="application/octet-stream",
