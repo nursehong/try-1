@@ -362,6 +362,15 @@ def paper_summary(index):
 
 
 paper_summary(0)
+file1 = current_dir / "1.pdf"
+with open(file1, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
+st.download_button(
+        label=" 📄 Download Resume",
+        data=PDFbyte,
+        file_name=file1.name,
+        mime="application/octet-stream",
+    )
 paper_summary(1)
 paper_summary(2)
 paper_summary(3)
